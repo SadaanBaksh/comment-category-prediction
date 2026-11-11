@@ -1,0 +1,20 @@
+# Data (not redistributed — download from the Kaggle competition)
+*.csv
+*.zip
+data/
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.venv/
+venv/
+
+# Model artifacts
+catboost_info/
+*.pkl
+*.npz
+*.npy
+
+# OS
+.DS_Store
