@@ -2,7 +2,9 @@
 
 **Multi-class classification of 300,000 online comments into civil, hate speech, personal attack and violent threat, scored on Macro-F1.**
 
-Machine Learning Practice (MLP) course project · Data Science Diploma · Term 1, Jan 2026 · Kaggle competition
+**MLP Project, Jan 2026 · IIT Madras BS Degree** · Private Kaggle competition, 2,744 participants
+
+🏅 **Final rank: 64 / 2,744 (top 2.3%)** on the private leaderboard
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue) ![scikit-learn](https://img.shields.io/badge/scikit--learn-TF--IDF%20%7C%20χ²-orange) ![LightGBM](https://img.shields.io/badge/LightGBM-gradient%20boosting-green)
 
@@ -12,7 +14,8 @@ Machine Learning Practice (MLP) course project · Data Science Diploma · Term 1
 
 | | |
 |---|---|
-| **Best public leaderboard score** | **0.83486** Macro-F1 |
+| **Private leaderboard** (final) | **0.82971** Macro-F1 · **Rank 64 / 2,744** (top 2.3%) |
+| **Public leaderboard** | 0.83618 Macro-F1 · Rank 97 / 2,744 |
 | **Validation Macro-F1** (20% holdout, final pipeline) | 0.8315 |
 | **Starting point** (baseline LightGBM, raw argmax) | ~0.80 |
 | **Feature space** | 100k hybrid TF-IDF features → 25k after χ² selection, plus 165 engineered features |
@@ -125,7 +128,7 @@ Negative results shaped the final design as much as the wins did. Full details a
 
 ## Running it
 
-The notebooks were written for Kaggle and read data from `/kaggle/input/comment-category-prediction-challenge/`. The dataset is not included here, in line with competition rules. To run locally, download it from the competition page and update the paths in the first cell.
+The notebooks were written for Kaggle and read data from `/kaggle/input/comment-category-prediction-challenge/`. The competition was private, so the dataset isn't publicly available and isn't included here. If you have the data, update the paths in the first cell to run locally.
 
 ```bash
 pip install -r requirements.txt
